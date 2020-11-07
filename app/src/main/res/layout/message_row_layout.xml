@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:clipToPadding="false">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="1dp">
+
+        <LinearLayout
+            android:id="@+id/message_row_main_linear_layout"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:gravity="center_vertical"
+            android:background="#fff">
+
+            <ImageView
+                android:id="@+id/message_row_user_dp"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:background="@color/navIconUnSelected"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/message_row_user_name"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Aneek Rahman"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"
+                        android:singleLine="true"
+                        android:fontFamily="@font/varela_round_regular"/>
+
+                    <TextView
+                        android:id="@+id/message_row_sent_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="2:03PM"
+                        android:textColor="#000"
+                        android:layout_gravity="top"
+                        android:fontFamily="@font/varela_round_regular"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/message_sent_you_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="You: "
+                        android:textColor="#84000000"
+                        android:fontFamily="@font/varela_round_regular"/>
+
+                    <TextView
+                        android:id="@+id/message_row_user_msg"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="What's up bruv"
+                        android:textColor="#842d151d"
+                        android:fontFamily="@font/varela_round_regular"
+                        android:singleLine="true"/>
+
+                    <TextView
+                        android:id="@+id/message_row_user_msg_bold"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="What's up bruv"
+                        android:textColor="#000"
+                        android:fontFamily="@font/varela_round_regular"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

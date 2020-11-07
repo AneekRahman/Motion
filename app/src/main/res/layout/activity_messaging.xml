@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivities.MessagingActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="44dp"
+            android:layout_height="54dp"
+            app:srcCompat="@drawable/ic_left_icon"
+            android:padding="12dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/message_to_user_dp"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@drawable/profile_dp_image_bg"/>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="14sp"
+                   android:text="@aneek_rahman"
+                   android:textColor="#000"
+                   android:layout_marginLeft="4dp"
+                   android:fontFamily="@font/varela_round_regular"
+                   android:textStyle="bold"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="10sp"
+                   android:text="active now"
+                   android:textColor="#5f9b00"
+                   android:layout_marginLeft="4dp"
+                   android:fontFamily="@font/varela_round_regular"
+                   android:textStyle="bold"/>
+
+           </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            app:srcCompat="@drawable/ic_video_icon"
+            android:padding="15dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/messaging_namebar_gradient"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/messaging_bottom_bar_gradient"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:padding="20dp"
+            app:srcCompat="@drawable/ic_upload_icon" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/messaging_edit_text_bg"
+            android:gravity="center_vertical"
+            android:hint="Enter message"
+            android:paddingBottom="12dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="12dp"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:maxHeight="150dp"
+            android:fontFamily="@font/varela_round_regular"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="14dp"
+            android:text="SEND"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/varela_round_regular"/>
+
+    </LinearLayout>
+
+</LinearLayout>

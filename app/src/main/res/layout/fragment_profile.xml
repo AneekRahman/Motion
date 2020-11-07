@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/cover_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1e0000"
+                android:gravity="center"
+                android:paddingTop="24dp">
+
+                <ImageView
+                    android:id="@+id/cover"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="130dp"
+                    android:background="#42ffffff"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/user_dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/profile_dp_image_bg"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="120dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="EDIT PROFILE"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:gravity="center"
+                        android:background="@drawable/profile_btn_bg"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_marginRight="10dp"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:srcCompat="@drawable/ic_settings_icon"
+                        android:padding="10dp"
+                        android:background="@drawable/profile_btn_bg"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/user_dp"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aneek Rahman"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@id/user_dp"
+                    android:fontFamily="@font/varela_round_regular"/>
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@aneek_rahman"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@id/user_dp"
+                    android:fontFamily="@font/varela_round_regular"
+                    android:layout_marginTop="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/user_dp"
+                    android:layout_below="@id/username"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/messages_btn_not_selected_bg"
+                        android:padding="4dp"
+                        android:paddingBottom="4dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="29k"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/varela_round_regular"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="followers"
+                            android:textColor="#000"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/varela_round_regular"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/messages_btn_not_selected_bg"
+                        android:padding="4dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="563"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/varela_round_regular"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="following"
+                            android:textColor="#000"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/varela_round_regular"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/messages_btn_not_selected_bg"
+                        android:padding="4dp"
+                        android:paddingBottom="4dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="19"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/varela_round_regular"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="posts"
+                            android:textColor="#000"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/varela_round_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/exampleText"
+                android:fontFamily="@font/varela_round_regular"
+                android:textColor="#3b3b3b"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#fff"
+                    android:background="@drawable/messages_btn_selected_bg"
+                    android:text="Chrono"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#6e6e6e"
+                    android:background="@drawable/messages_btn_not_selected_bg"
+                    android:text="Popular"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:layout_marginLeft="4dp"/>
+
+            </LinearLayout>
+
+            <com.motion.app.Classes.ExpandableHeightGridView
+                android:id="@+id/grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@android:color/transparent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:numColumns="2"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

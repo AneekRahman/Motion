@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_holder"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dp">
+
+    <View
+        android:id="@+id/pointer"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@color/navIconUnSelected"
+        android:rotation="45"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="48dp"/>
+
+    <ImageView
+        android:id="@+id/other_users_dp"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/profile_dp_image_bg"/>
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:text="Hello, I'm Aneek, Nice to meet you :D"
+        android:fontFamily="@font/varela_round_regular"
+        android:textColor="#000"
+        android:background="@drawable/chat_msg_others_bg"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="30dp"/>
+
+</RelativeLayout>
